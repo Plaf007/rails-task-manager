@@ -1,3 +1,5 @@
+<!-- app/views/tasks/new.html.erb -->
+
 <h1>New Task</h1>
 
 <%= form_with(model: @task, url: tasks_path) do |form| %>
@@ -20,3 +22,5 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+<%= link_to 'Index', tasks_path %>
